@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+
+int main () {
+
+  std::cout << "MAGIC 8-BALL: \n\n";
+
+  srand(time(NULL));
+
+  int answer = std::rand() % 4;
+
+  if (answer == 0){
+    std::cout << "It is certain";
+  }
+  else if (answer == 1){
+    std::cout << "It is decidedly so";
+  }
+  else if (answer == 2){
+    std::cout << "Without a doubt";
+  }
+  else {
+    std::cout << "Very doubtful";
+  }
+
+}
